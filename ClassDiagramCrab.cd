@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Crab.Borne">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAAAAAAAAAAAAAAAABAgAgAAAAAACAAAAA=</HashCode>
+      <FileName>Borne.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="leType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Crab.Maintenance">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAABAAgAAA=</HashCode>
+      <FileName>Maintenance.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lesStations" />
+      <Field Name="lesTechniciens" />
+      <Field Name="lesVisites" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Crab.Station">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAABAAAoAIAAAAAAQAAAA=</HashCode>
+      <FileName>Station.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lesBornes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Crab.Technicien">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <AssociationLine Name="lesVisites" Type="Crab.Visite" ManuallyRouted="true">
+      <Path>
+        <Point X="2" Y="5.949" />
+        <Point X="2.323" Y="5.949" Type="JumpStart" />
+        <Point X="2.49" Y="5.949" Type="JumpEnd" />
+        <Point X="2.75" Y="5.949" />
+        <Point X="2.75" Y="5.85" />
+        <Point X="3.5" Y="5.85" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAEAAAAAAIAAAAABAIAAAAAAACAAgAAA=</HashCode>
+      <FileName>Technicien.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lesVisites" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Crab.TypeBorne">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAQQAAAAAAAAAAAFAAAABAAAAAAAAAAE=</HashCode>
+      <FileName>TypeBorne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crab.Visite">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAQAAAAAAAAAAAAoAAAACACAQAAAA=</HashCode>
+      <FileName>Visite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="laStation" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="lesBornes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Crab.Program" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
